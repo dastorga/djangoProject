@@ -1,0 +1,11 @@
+{% extends 'base.html' %} 
+
+{% block title %} | Welcome {% endblock %}
+
+{% block content %}
+
+    {% for redirect in redirects %}
+      <h4 class="text-primary">{{ redirect.key }}</h4>
+    {% endfor %}
+
+{% endblock %}
